@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Service | AutoCare Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">AutoCare Hub</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="spareparts.html">Spare Parts</a>
+    <a href="service-booking.html">Book Service</a>
+  </nav>
+</header>
+
+<section class="form-section">
+  <h2>Service Booking</h2>
+
+  <form id="serviceForm">
+    <select required>
+      <option value="">Vehicle Brand</option>
+      <option>Honda</option>
+      <option>Hero</option>
+    </select>
+
+    <select required>
+      <option value="">Vehicle Model</option>
+    </select>
+
+    <select id="serviceType" required>
+      <option value="">Service Type</option>
+      <option value="periodic">Periodic Service</option>
+      <option value="emergency">Emergency Repair</option>
+    </select>
+
+    <textarea id="problem" placeholder="Describe the problem"></textarea>
+    <input type="date" id="serviceDate">
+
+    <button class="btn" type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 AutoCare Hub</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
